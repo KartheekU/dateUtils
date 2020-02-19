@@ -20,6 +20,14 @@
 			<url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
 		</snapshotRepository>-->
 </distributionManagement>
+
+<properties>
+  <sonar.projectKey>KartheekU_dateUtils</sonar.projectKey>
+  <sonar.organization>kartheeku</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>205d266dbf2ac387a211d2bc71840db03db685cf</sonar.login>
+</properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
