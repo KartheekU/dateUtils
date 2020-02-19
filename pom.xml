@@ -1,13 +1,33 @@
-i<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mkyong.core.utils</groupId>
   <artifactId>dateUtils</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.2</version>
   <name>dateUtils</name>
-  <ownername>kartheek</ownername>
   <url>http://maven.apache.org</url>
+
+<distributionManagement>
+		<repository>
+				<id>releases</id>
+				<name>Internal Releases</name>
+				<url>https://maven.pkg.github.com/KartheekU/dateUtils</url>
+			</repository>
+		<!--<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+		</snapshotRepository>-->
+</distributionManagement>
+
+<properties>
+  <sonar.projectKey>KartheekU_dateUtils</sonar.projectKey>
+  <sonar.organization>kartheeku</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>205d266dbf2ac387a211d2bc71840db03db685cf</sonar.login>
+</properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
